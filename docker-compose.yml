@@ -2,11 +2,11 @@ version: '3.7'
 services:
   trino:
     hostname: trino
-    image: 'trinodb/trino:351'
+    image: 'trinodb/trino:366'
     ports:
       - '8080:8080'
     volumes:
-      - ./etc:/usr/lib/trino/etc:ro
+      - ./etc:/etc/trino:ro
     networks:
       - trino-network
 
